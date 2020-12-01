@@ -1,0 +1,101 @@
+:root {
+	--orange: #f66a0a;
+	--green: #28a745;
+	--blue: #0070f3;
+	--lightBlue: #79b8ff;
+	--lightestBlue: #c8e1ff;
+	--offWhite: #f6f8fa;
+	--grey: #6a737d;
+	--grey2: #586069;
+	--black: #1a1e22;
+	--darkGrey: #24292e;
+	--white: #ffffff;
+	--purple: #d075e0;
+	--pink: #e367a9;
+	--secondaryText: #4b5156;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+	scroll-snap-type: proximity;
+}
+
+.App {
+	margin: 0;
+	padding: 0;
+}
+
+.isActive {
+	width: 17px;
+	height: 17px;
+	border-radius: 100%;
+	text-indent: 1000%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: var(--purple);
+	outline: none;
+	border: none;
+	margin-top: 1rem;
+	opacity: 0.7;
+	cursor: pointer;
+	/* margin-left: 1rem; */
+}
+
+.circle {
+	/* border: solid red; */
+	width: 17px;
+	height: 17px;
+	border-radius: 100%;
+	text-indent: 1000%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: var(--secondaryText);
+	opacity: 0.5;
+	outline: none;
+	border: none;
+	/* margin-left: 0.1rem; */
+	cursor: pointer;
+	/* margin-left: 5rem; */
+	/* margin-top: 1rem; */
+}
+
+.circle:hover {
+	width: 20px;
+	height: 20px;
+}
+
+.navigation__wrapper {
+	position: fixed;
+	display: flex;
+	justify-content: space-evenly;
+	/* top: -10rem; */
+	top: 30vh;
+	height: 15rem;
+	right: 0.5rem;
+
+	flex-direction: column;
+	/* border: solid pink; */
+}
+
+.bubbles__wrapper {
+	/* border: solid green; */
+	width: 5rem;
+	display: flex;
+}
+.bubbles__wrapper > p {
+	font-size: 0.8rem;
+}
+
+.showName {
+	/* right: 0; */
+	/* display: none; */
+	margin-left: 0.4rem;
+	margin-top: 1rem;
+}
+
+.showNothing {
+	display: none;
+}
+
+/* ---------------------------------------------------------------> */
