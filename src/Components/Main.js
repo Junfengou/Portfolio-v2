@@ -74,6 +74,10 @@ const Wrapper = styled.div`
 		margin-top: -1.7rem;
 	}
 	/* align-items: center; */
+
+	button {
+		cursor: pointer;
+	}
 `;
 
 export default Main;

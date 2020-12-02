@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Me from "../images/Me.jpg";
 import Resume from "../document/Resume.pdf";
-
 function Second() {
 	return (
 		<Wrapper>
@@ -27,11 +26,9 @@ function Second() {
 					</p>
 					{/* <p>I'm a self taught front end developer</p> */}
 				</div>
-				<button>
-					<a target="_blank" href={Resume}>
-						Download Resume
-					</a>
-				</button>
+				<a target="_blank" href={Resume}>
+					<button>Download Resume</button>
+				</a>
 			</div>
 			<div className="right_wrapper">
 				<div className="photo__bubble">
@@ -45,7 +42,7 @@ function Second() {
 const Wrapper = styled.div`
 	/* border: solid blue; */
 	/* width: 100vw; */
-	height: 60vh;
+	height: 80vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -55,7 +52,7 @@ const Wrapper = styled.div`
 	.left_wrapper {
 		/* border: solid red; */
 		height: 100%;
-		width: 70%;
+		width: 60%;
 		display: flex;
 		justify-content: center;
 		/* align-items: center; */
@@ -76,6 +73,7 @@ const Wrapper = styled.div`
 			color: var(--white);
 			border-color: var(--paleBlue);
 			outline: 0;
+			cursor: pointer;
 		}
 	}
 
@@ -100,7 +98,7 @@ const Wrapper = styled.div`
 	.right_wrapper {
 		/* border: solid green; */
 		height: 100%;
-		width: 30%;
+		width: 40%;
 		display: flex;
 		justify-content: center;
 		align-items: center;

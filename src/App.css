@@ -70,7 +70,7 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	/* top: -10rem; */
-	top: 30vh;
+	top: 40vh;
 	height: 15rem;
 	right: 0.5rem;
 
@@ -84,7 +84,7 @@ body {
 
 .bubbles__wrapper {
 	/* border: solid green; */
-	width: 5rem;
+	width: 5.5rem;
 	display: flex;
 	/* height: 17px; */
 }

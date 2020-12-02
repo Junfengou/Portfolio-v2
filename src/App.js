@@ -20,7 +20,7 @@ function App() {
 				<Second />
 			</Section>
 
-			<Section name="WHAT I DO">
+			<Section name="PROJECTS">
 				<Third />
 			</Section>
 
