@@ -3,22 +3,22 @@
 	--green: #28a745;
 	--blue: #0070f3;
 	--lightBlue: #79b8ff;
+	--paleBlue: #00b7c7;
 	--lightestBlue: #c8e1ff;
 	--offWhite: #f6f8fa;
 	--grey: #6a737d;
+	--sealthGrey: #4b5156;
 	--grey2: #586069;
 	--black: #1a1e22;
 	--darkGrey: #24292e;
 	--white: #ffffff;
 	--purple: #d075e0;
 	--pink: #e367a9;
-	--secondaryText: #4b5156;
 }
 
 html,
 body {
 	scroll-behavior: smooth;
-	scroll-snap-type: proximity;
 }
 
 .App {
@@ -33,7 +33,7 @@ body {
 	text-indent: 1000%;
 	white-space: nowrap;
 	overflow: hidden;
-	background-color: var(--purple);
+	background-color: var(--blue);
 	outline: none;
 	border: none;
 	margin-top: 1rem;
@@ -50,7 +50,7 @@ body {
 	text-indent: 1000%;
 	white-space: nowrap;
 	overflow: hidden;
-	background-color: var(--secondaryText);
+	background-color: var(--sealthGrey);
 	opacity: 0.5;
 	outline: none;
 	border: none;
@@ -78,10 +78,15 @@ body {
 	/* border: solid pink; */
 }
 
+.bubbles__wrapper > p {
+	color: var(--white);
+}
+
 .bubbles__wrapper {
 	/* border: solid green; */
 	width: 5rem;
 	display: flex;
+	/* height: 17px; */
 }
 .bubbles__wrapper > p {
 	font-size: 0.8rem;

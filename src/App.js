@@ -4,17 +4,19 @@ import Second from "./Components/Second";
 import Third from "./Components/Third";
 import Fourth from "./Components/Fourth";
 import { Section, SectionsSpy } from "react-smart-sections";
+import { Link } from "react-scroll";
 import "./App.css";
 
 function App() {
 	return (
 		<div className="app">
 			{/* <Home /> */}
-			<Section name="ABOUT">
+			{/* <Section name="WELCOME"> */}
+			<Section name="WELCOME">
 				<Main />
 			</Section>
 
-			<Section name="SKILLS">
+			<Section name="ABOUT" id="about">
 				<Second />
 			</Section>
 
@@ -38,6 +40,7 @@ function App() {
 								>
 									{section.name}
 								</button>
+								<a href={section.name} />{" "}
 								<p className={section.active ? "showName" : "showNothing"}>
 									{section.name}
 								</p>

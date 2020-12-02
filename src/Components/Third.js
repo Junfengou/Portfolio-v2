@@ -10,11 +10,12 @@ function Third() {
 }
 
 const Wrapper = styled.div`
-	/* border: solid green; */
+	border: solid green;
 	/* width: 100vw; */
-	height: 100vh;
+	height: 60vh;
 	display: flex;
 	justify-content: center;
+	background: var(--darkGrey);
 	/* align-items: center; */
 `;
 
