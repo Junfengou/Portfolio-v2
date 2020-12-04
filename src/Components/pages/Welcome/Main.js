@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "./Main.css";
-import BG from "../images/MainBG.jpg";
+import { BsCaretDown } from "react-icons/bs";
 import { Link } from "react-scroll";
 
 function Main() {
@@ -13,9 +13,10 @@ function Main() {
 					<h3>Front end developer</h3>
 				</div>
 				<div className="btn__wrapper">
-					<button>
-						<Link to="about">Scroll down</Link>
-					</button>
+					<Link to="about">
+						<BsCaretDown className="icon" />
+					</Link>
+					<Link to="about"></Link>
 				</div>
 			</div>
 		</Wrapper>
@@ -75,7 +76,9 @@ const Wrapper = styled.div`
 	}
 	/* align-items: center; */
 
-	button {
+	.icon {
+		width: 3rem;
+		height: 3rem;
 		cursor: pointer;
 	}
 `;

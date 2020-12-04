@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import covid from "../images/projects/virus.png";
-import github from "../images/projects/git.png";
-import fish from "../images/projects/catch.png";
-import social from "../images/projects/social.png";
+import covid from "../../../images/projects/virus.png";
+import github from "../../../images/projects/git.png";
+import fish from "../../../images/projects/catch.png";
+import social from "../../../images/projects/social.png";
+import netflix from "../../../images/projects/netflix.png";
+import shop from "../../../images/projects/shop.png";
 import { DiGithubAlt } from "react-icons/di";
 import { BsFolderSymlink } from "react-icons/bs";
 
@@ -40,11 +42,12 @@ function Third() {
 					<div className="links">
 						<a
 							target="_blank"
+							rel="noreferrer"
 							href="https://github.com/Junfengou/Github-Clone-Dark-react"
 						>
 							<DiGithubAlt className="Gitcon" />
 						</a>
-						<a target="_blank" href="">
+						<a target="_blank" rel="noreferrer" href="">
 							<BsFolderSymlink className="Foldercon" />
 						</a>
 					</div>
@@ -75,11 +78,16 @@ function Third() {
 					<div className="links">
 						<a
 							target="_blank"
+							rel="noreferrer"
 							href="https://github.com/Junfengou/Catch-of-the-day"
 						>
 							<DiGithubAlt className="Gitcon" />
 						</a>
-						<a target="_blank" href=" https://fresh-catch-756af.web.app/">
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href=" https://fresh-catch-756af.web.app/"
+						>
 							<BsFolderSymlink className="Foldercon" />
 						</a>
 					</div>
@@ -112,11 +120,95 @@ function Third() {
 					<div className="links">
 						<a
 							target="_blank"
+							rel="noreferrer"
 							href="https://github.com/Junfengou/Covid-tracker-light-react"
 						>
 							<DiGithubAlt className="Gitcon" />
 						</a>
-						<a target="_blank" href="">
+						<a target="_blank" rel="noreferrer" href="">
+							<BsFolderSymlink className="Foldercon" />
+						</a>
+					</div>
+				</div>
+			</div>
+
+			{/**--------------------------------------- */}
+
+			<div className="project__wrapper">
+				<div className="img__wrapper">
+					<img src={netflix} alt="github" />{" "}
+				</div>
+				<div className="project__info">
+					<div className="title__wrapper">
+						<h2>
+							Netflix clone <br />
+							<span className="divider-2" />
+						</h2>
+					</div>
+					<div className="text__wrapper">
+						<div className="text">
+							<p>
+								I created this netflix frontend clone to as an excuse to
+								exercise my frontend styling skills
+							</p>
+						</div>
+					</div>
+
+					<div className="links">
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href="https://github.com/Junfengou/Netflix-clone-react"
+						>
+							<DiGithubAlt className="Gitcon" />
+						</a>
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href="https://netflix-clone-ff957.web.app/"
+						>
+							<BsFolderSymlink className="Foldercon" />
+						</a>
+					</div>
+				</div>
+			</div>
+
+			{/**--------------------------------------- */}
+
+			<div className="project__wrapper">
+				<div className="img__wrapper">
+					<img src={shop} alt="github" />{" "}
+				</div>
+				<div className="project__info">
+					<div className="title__wrapper">
+						<h2>
+							PhoneStop <br />
+							<span className="divider-2" />
+						</h2>
+					</div>
+					<div className="text__wrapper">
+						<div className="text">
+							<p>
+								Are you in need a phone? Check out PhoneStop where I will sell
+								you outdated phone for fraction of the price when they were
+								new...like 10 years ago.
+							</p>
+						</div>
+					</div>
+
+					<div className="links">
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href="https://github.com/Junfengou/E-commerce-React"
+						>
+							<DiGithubAlt className="Gitcon" />
+						</a>
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href="https://phone-store-ecommerce.firebaseapp.com/"
+						>
 							<BsFolderSymlink className="Foldercon" />
 						</a>
 					</div>
@@ -148,16 +240,23 @@ function Third() {
 					<div className="links">
 						<a
 							target="_blank"
+							rel="noreferrer"
 							href="https://github.com/Junfengou/Social-media-company"
 						>
 							<DiGithubAlt className="Gitcon" />
 						</a>
-						<a target="_blank" href="http://marshpillow.pythonanywhere.com/">
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href="http://marshpillow.pythonanywhere.com/"
+						>
 							<BsFolderSymlink className="Foldercon" />
 						</a>
 					</div>
 				</div>
 			</div>
+
+			{/**--------------------------------------- */}
 
 			{/* <div className="project__wrapper"></div> */}
 		</Wrapper>
@@ -167,13 +266,27 @@ function Third() {
 const Wrapper = styled.div`
 	/* border: solid green; */
 	/* width: 100vw; */
-	height: 270vh;
+	height: 370vh;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	background: var(--darkGrey);
 	flex-direction: column;
 	/* align-items: center; */
+
+	.highlight-link {
+		text-decoration: none;
+		color: var(--paleBlue);
+		display: inline-block;
+		transition: all 0.2s ease-in-out;
+		box-sizing: border-box;
+		text-decoration: none;
+		box-shadow: inset 0 -10px 0 var(--paleBlue);
+		&:hover {
+			box-shadow: inset 0 -55px 0 0 var(--paleBlue);
+			color: white;
+		}
+	}
 
 	.title {
 		/* border: solid red; */

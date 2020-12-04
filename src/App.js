@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
-import Main from "./Components/Main";
-import Second from "./Components/Second";
-import Third from "./Components/Third";
-import Fourth from "./Components/Fourth";
+import Landing from "./Components/pages/Welcome/Main";
+import AboutMe from "./Components/pages/AboutMe/Second";
+import Skills from "./Components/pages/Skills/Fourth";
+import MainProjects from "./Components/pages/Projects/Third";
+import Contact from "./Components/pages/Contact/Contact";
 import { Section, SectionsSpy } from "react-smart-sections";
 import { Link } from "react-scroll";
 import "./App.css";
@@ -13,19 +14,23 @@ function App() {
 			{/* <Home /> */}
 			{/* <Section name="WELCOME"> */}
 			<Section name="WELCOME">
-				<Main />
+				<Landing />
 			</Section>
 
 			<Section name="ABOUT" id="about">
-				<Second />
+				<AboutMe />
 			</Section>
 
 			<Section name="SKILLS">
-				<Fourth />
+				<Skills />
 			</Section>
 
 			<Section name="PROJECTS">
-				<Third />
+				<MainProjects />
+			</Section>
+
+			<Section name="CONTACT">
+				<Contact />
 			</Section>
 
 			<SectionsSpy

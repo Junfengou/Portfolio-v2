@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 0.5rem;
+	/* margin-left: 0.5rem; */
 	/* opacity: 0.8; */
 	h4 {
 		font-size: 0.9rem;

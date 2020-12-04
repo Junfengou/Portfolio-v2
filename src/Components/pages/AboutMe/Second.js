@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import Me from "../images/Me.jpg";
-import Resume from "../document/Resume.pdf";
+import Me from "../../../images/Me.jpg";
+import Resume from "../../../document/Resume.pdf";
 function Second() {
 	return (
 		<Wrapper>
 			<div className="left_wrapper">
 				<div className="text_area">
 					<h1>Hi! My name is Jun.</h1>
-					<h3>Welcome to my portfolio.</h3>
-					<span className="divider"></span>
+					<h3>
+						Welcome to my portfolio. <span className="divider" />
+					</h3>
+
 					<p>
 						I am a college student at University of Omaha Nebraska studying
 						Management Information System. Although I am not a genius by any
@@ -26,7 +28,7 @@ function Second() {
 					</p>
 					{/* <p>I'm a self taught front end developer</p> */}
 				</div>
-				<a target="_blank" href={Resume}>
+				<a target="_blank" rel="noreferrer" href={Resume}>
 					<button>Download Resume</button>
 				</a>
 			</div>
@@ -73,15 +75,27 @@ const Wrapper = styled.div`
 			color: var(--white);
 			border-color: var(--paleBlue);
 			outline: 0;
+			font-weight: bold;
 			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: var(--paleBlue);
+			color: var(--black);
+			font-weight: bold;
+			opacity: 0.9;
 		}
 	}
 
 	.divider {
 		border: solid var(--paleBlue);
 		background-color: var(--paleBlue);
-		width: 15rem;
+		width: 10rem;
 		display: block;
+
+		&:hover {
+			box-shadow: inset 0 -55px 0 0 var(--paleBlue);
+		}
 	}
 
 	.text_area {

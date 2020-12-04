@@ -83,9 +83,8 @@ const Wrapper = styled.div`
 		/* border: solid green; */
 		height: 70%;
 		width: 80%;
-		justify-content: center;
-		align-items: center;
 		display: grid;
+		place-items: center; //MUST HAVE FOR GRID LAYOUT!!
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
 	}

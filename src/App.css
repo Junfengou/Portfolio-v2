@@ -33,7 +33,7 @@ body {
 	text-indent: 1000%;
 	white-space: nowrap;
 	overflow: hidden;
-	background-color: var(--blue);
+	background-color: var(--paleBlue);
 	outline: none;
 	border: none;
 	margin-top: 1rem;
