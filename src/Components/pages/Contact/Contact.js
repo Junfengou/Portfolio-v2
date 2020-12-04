@@ -10,9 +10,8 @@ function Contact() {
 			<div className="container">
 				<h2>Let's build something together!</h2>
 				<p>
-					I am actively looking for projects and open for any opportunities.{" "}
-					<br />
-					If you're interested, you can react me here!
+					I am actively looking for projects and open for any opportunities. If
+					you're interested, you can react me here!
 				</p>
 				<a href="mailto:junfengou@gmail.com">
 					<button>Contact me!</button>
@@ -100,12 +99,13 @@ const Wrapper = styled.div`
 		font-weight: bold;
 		opacity: 0.9;
 	}
+	h2,
 	p {
 		text-align: center;
 	}
 
 	.icons {
-		width: 20%;
+		width: 40%;
 		height: 20%;
 		display: flex;
 		justify-content: space-around;
@@ -127,12 +127,75 @@ const Wrapper = styled.div`
 		color: var(--paleBlue);
 		/* border: solid blue; */
 	}
-	/* .icon {
-		height: 80%;
-		width: 15%;
-		color: var(--paleBlue);
-		border: solid red;
-	} */
+
+	@media screen and (max-width: 1000px) {
+		height: 50vh;
+		.container {
+			/* border: solid red; */
+			height: 80%;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		button {
+			height: 2.8rem;
+			width: 9rem;
+		}
+	}
+
+	@media screen and (max-width: 720px) {
+		height: 60vh;
+		.container {
+			/* border: solid red; */
+			height: 80%;
+			width: 60%;
+			h2 {
+				font-size: 1.3rem;
+			}
+			p {
+				font-size: 0.9rem;
+			}
+		}
+
+		button {
+			height: 2.8rem;
+			width: 9rem;
+		}
+	}
+
+	@media screen and (max-width: 550px) {
+		height: 60vh;
+		.container {
+			/* border: solid red; */
+			height: 80%;
+			width: 60%;
+			h2 {
+				font-size: 1rem;
+			}
+			p {
+				font-size: 0.8rem;
+			}
+		}
+
+		button {
+			height: 2.6rem;
+			width: 8rem;
+		}
+		.icons {
+			width: 70%;
+			height: 20%;
+		}
+
+		.react_icon {
+			height: 1.7rem;
+			width: 1.7rem;
+			color: var(--paleBlue);
+			/* border: solid blue; */
+		}
+	}
 `;
 
 export default Contact;

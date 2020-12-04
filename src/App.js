@@ -29,9 +29,9 @@ function App() {
 				<MainProjects />
 			</Section>
 
-			{/* <Section name="CONTACT">
+			<Section name="CONTACT">
 				<Contact />
-			</Section> */}
+			</Section>
 
 			<SectionsSpy
 				render={(sections) => (
