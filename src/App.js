@@ -17,21 +17,21 @@ function App() {
 				<Landing />
 			</Section>
 
-			<Section name="ABOUT" id="about">
+			{/* <Section name="ABOUT" id="about">
 				<AboutMe />
-			</Section>
+			</Section> */}
 
 			<Section name="SKILLS">
 				<Skills />
 			</Section>
 
-			<Section name="PROJECTS">
+			{/* <Section name="PROJECTS">
 				<MainProjects />
-			</Section>
+			</Section> */}
 
-			<Section name="CONTACT">
+			{/* <Section name="CONTACT">
 				<Contact />
-			</Section>
+			</Section> */}
 
 			<SectionsSpy
 				render={(sections) => (

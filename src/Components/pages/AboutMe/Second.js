@@ -7,7 +7,7 @@ function Second() {
 		<Wrapper>
 			<div className="left_wrapper">
 				<div className="text_area">
-					<h1>Hi! My name is Jun.</h1>
+					<h2>Hi! My name is Jun</h2>
 					<h3>
 						Welcome to my portfolio. <span className="divider" />
 					</h3>
@@ -60,11 +60,6 @@ const Wrapper = styled.div`
 		/* align-items: center; */
 		flex-direction: column;
 
-		a {
-			text-decoration: none;
-			color: var(--white);
-		}
-
 		button {
 			/* width: 5rem; */
 			margin-left: 25rem;
@@ -92,10 +87,6 @@ const Wrapper = styled.div`
 		background-color: var(--paleBlue);
 		width: 10rem;
 		display: block;
-
-		&:hover {
-			box-shadow: inset 0 -55px 0 0 var(--paleBlue);
-		}
 	}
 
 	.text_area {
@@ -124,6 +115,94 @@ const Wrapper = styled.div`
 		width: 18rem;
 		border-radius: 100%;
 		object-fit: contain;
+	}
+
+	@media (max-width: 1400px) {
+		height: 120vh;
+		/* border: solid red; */
+		flex-direction: column-reverse;
+
+		.left_wrapper {
+			/* border: solid red; */
+			height: 45%;
+			width: 60%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.text_area {
+			/* border: solid blue; */
+			height: 100%;
+			width: 100%;
+			margin-left: 0rem;
+		}
+
+		button {
+			margin-left: 0rem !important;
+		}
+
+		.right_wrapper {
+			/* border: solid blue; */
+			height: 33%;
+			width: 30%;
+		}
+
+		img {
+			/* border: solid red; */
+			height: 14rem;
+			width: 14rem;
+			border-radius: 100%;
+			object-fit: contain;
+		}
+	}
+
+	@media (max-width: 1024px) {
+		.left_wrapper {
+			/* border: solid red; */
+			height: 25%;
+			width: 60%;
+		}
+	}
+
+	@media (max-width: 770px) {
+		.left_wrapper {
+			/* border: solid red; */
+			height: 60%;
+			width: 70%;
+		}
+	}
+
+	/* @media (max-width: 768px) and (max-height: 1024px) {
+		left_wrapper {
+			border: solid red;
+			height: 75%;
+			width: 70%;
+		}
+	} */
+
+	@media (max-width: 400px) and (max-height: 800px) {
+		.left_wrapper {
+			/* border: solid red; */
+			height: 60%;
+			width: 85%;
+		}
+		h2,
+		h3 {
+			font-size: 1rem;
+		}
+		p {
+			font-size: 0.8rem;
+		}
+
+		img {
+			/* border: solid red; */
+			height: 11rem;
+			width: 11rem;
+			border-radius: 100%;
+			object-fit: contain;
+		}
 	}
 `;
 

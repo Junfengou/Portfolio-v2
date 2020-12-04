@@ -82,6 +82,47 @@ const Wrapper = styled.div`
 		height: 3rem;
 		cursor: pointer;
 	}
+
+	@media (max-width: 750px) {
+		h1 {
+			font-size: 3rem;
+			z-index: 2;
+		}
+
+		h3 {
+			font-size: 1.4rem;
+			/* border: solid red; */
+			margin-top: -1.7rem;
+		}
+	}
+
+	@media (max-width: 500px) {
+		h1 {
+			font-size: 2rem;
+			z-index: 2;
+		}
+
+		h3 {
+			font-size: 1.2rem;
+			margin-top: 0.1rem;
+			/* border: solid red; */
+			/* margin-top: -1.7rem; */
+		}
+	}
+
+	@media (max-width: 380px) {
+		h1 {
+			font-size: 1.5rem;
+			z-index: 2;
+		}
+
+		h3 {
+			font-size: 1rem;
+			margin-top: 0.1rem;
+			/* border: solid red; */
+			/* margin-top: -1.7rem; */
+		}
+	}
 `;
 
 export default Main;
