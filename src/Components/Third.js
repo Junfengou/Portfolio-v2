@@ -3,6 +3,7 @@ import styled from "styled-components";
 import covid from "../images/projects/virus.png";
 import github from "../images/projects/git.png";
 import fish from "../images/projects/catch.png";
+import social from "../images/projects/social.png";
 import { DiGithubAlt } from "react-icons/di";
 import { BsFolderSymlink } from "react-icons/bs";
 
@@ -21,7 +22,10 @@ function Third() {
 				</div>
 				<div className="project__info">
 					<div className="title__wrapper">
-						<h2>Github user tracker</h2>
+						<h2>
+							Github user tracker
+							<span className="divider-2" />
+						</h2>
 					</div>
 					<div className="text__wrapper">
 						<div className="text">
@@ -47,13 +51,17 @@ function Third() {
 				</div>
 			</div>
 
+			{/**--------------------------------------- */}
+
 			<div className="project__wrapper">
 				<div className="img__wrapper">
 					<img src={fish} alt="github" />{" "}
 				</div>
 				<div className="project__info">
 					<div className="title__wrapper">
-						<h2>Restaurant Menu</h2>
+						<h2>
+							Restaurant Menu <span className="divider-2" />
+						</h2>
 					</div>
 					<div className="text__wrapper">
 						<div className="text">
@@ -78,13 +86,17 @@ function Third() {
 				</div>
 			</div>
 
+			{/**--------------------------------------- */}
+
 			<div className="project__wrapper">
 				<div className="img__wrapper">
 					<img src={covid} alt="github" />{" "}
 				</div>
 				<div className="project__info">
 					<div className="title__wrapper">
-						<h2>Coronavirus Tracker</h2>
+						<h2>
+							Coronavirus Tracker <span className="divider-2" />
+						</h2>
 					</div>
 					<div className="text__wrapper">
 						<div className="text">
@@ -111,6 +123,42 @@ function Third() {
 				</div>
 			</div>
 
+			{/**--------------------------------------- */}
+
+			<div className="project__wrapper">
+				<div className="img__wrapper">
+					<img src={social} alt="github" />{" "}
+				</div>
+				<div className="project__info">
+					<div className="title__wrapper">
+						<h2>
+							Social media platform <span className="divider-2" />
+						</h2>
+					</div>
+					<div className="text__wrapper">
+						<div className="text">
+							<p>
+								This is my first web application I made while learning Python
+								and Django. A simple social media platform where users can post
+								contents on anything.
+							</p>
+						</div>
+					</div>
+
+					<div className="links">
+						<a
+							target="_blank"
+							href="https://github.com/Junfengou/Social-media-company"
+						>
+							<DiGithubAlt className="Gitcon" />
+						</a>
+						<a target="_blank" href="http://marshpillow.pythonanywhere.com/">
+							<BsFolderSymlink className="Foldercon" />
+						</a>
+					</div>
+				</div>
+			</div>
+
 			{/* <div className="project__wrapper"></div> */}
 		</Wrapper>
 	);
@@ -119,7 +167,7 @@ function Third() {
 const Wrapper = styled.div`
 	/* border: solid green; */
 	/* width: 100vw; */
-	height: 200vh;
+	height: 270vh;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -139,6 +187,14 @@ const Wrapper = styled.div`
 		height: 1px;
 		width: 15rem;
 		display: block;
+	}
+	.divider-2 {
+		border: solid var(--paleBlue);
+		background-color: var(--paleBlue);
+		height: 1px;
+		width: 9rem;
+		display: block;
+		float: right;
 	}
 
 	.project__wrapper {
@@ -187,9 +243,10 @@ const Wrapper = styled.div`
 	.title__wrapper {
 		/* border: solid red; */
 		height: 20%;
-		display: flex;
+		/* display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: center; */
+		text-align: right;
 		width: 100%;
 
 		p {
@@ -223,11 +280,12 @@ const Wrapper = styled.div`
 	.links {
 		/* border: solid pink; */
 		height: 10%;
-		width: 50%;
+		width: 40%;
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 		text-align: right;
+		margin-left: 14rem;
 
 		.Gitcon {
 			/* border: solid red; */

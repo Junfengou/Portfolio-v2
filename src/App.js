@@ -20,12 +20,12 @@ function App() {
 				<Second />
 			</Section>
 
-			<Section name="PROJECTS">
-				<Third />
+			<Section name="SKILLS">
+				<Fourth />
 			</Section>
 
-			<Section name="HMM">
-				<Fourth />
+			<Section name="PROJECTS">
+				<Third />
 			</Section>
 
 			<SectionsSpy
@@ -54,29 +54,3 @@ function App() {
 }
 
 export default App;
-
-{
-	/**
-<SectionsSpy
-				render={(sections) => (
-					<div className="navigation">
-						{sections.map((section) => (
-							<div className="bubbles__wrapper">
-								<button
-									onClick={section.scroll}
-									className={section.active ? "isActive" : "circle"}
-									// className="circle"
-								>
-									{section.name}
-								</button>
-								<p className={section.active ? "showName" : "showNothing"}>
-									{section.name}
-								</p>
-							</div>
-						))}
-					</div>
-				)}
-			/>
-
-*/
-}
