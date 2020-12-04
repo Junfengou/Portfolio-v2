@@ -25,9 +25,9 @@ function App() {
 				<Skills />
 			</Section>
 
-			{/* <Section name="PROJECTS">
+			<Section name="PROJECTS">
 				<MainProjects />
-			</Section> */}
+			</Section>
 
 			{/* <Section name="CONTACT">
 				<Contact />

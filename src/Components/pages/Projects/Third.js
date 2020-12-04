@@ -103,16 +103,15 @@ function Third() {
 				<div className="project__info">
 					<div className="title__wrapper">
 						<h2>
-							Coronavirus Tracker <span className="divider-2" />
+							Covid Tracker <span className="divider-2" />
 						</h2>
 					</div>
 					<div className="text__wrapper">
 						<div className="text">
 							<p>
-								Coronavirus is like the new zombie apocalypse, everyone is
-								afraid to go outside.If you're curious how bad the virus is,
-								check out this application I made that keeps track of COVID
-								cases in United States and worldwide.
+								If you're curious how bad the virus is, check out this
+								application I made that keeps track of COVID cases in United
+								States and worldwide.
 							</p>
 						</div>
 					</div>
@@ -189,9 +188,8 @@ function Third() {
 					<div className="text__wrapper">
 						<div className="text">
 							<p>
-								Are you in need a phone? Check out PhoneStop where I will sell
-								you outdated phone for fraction of the price when they were
-								new...like 10 years ago.
+								Check out PhoneStop where I will sell you outdated phone for
+								fraction of the price when they were new...like 10 years ago.
 							</p>
 						</div>
 					</div>
@@ -217,14 +215,14 @@ function Third() {
 
 			{/**--------------------------------------- */}
 
-			<div className="project__wrapper">
+			{/* <div className="project__wrapper">
 				<div className="img__wrapper">
 					<img src={social} alt="github" />{" "}
 				</div>
 				<div className="project__info">
 					<div className="title__wrapper">
 						<h2>
-							Social media platform <span className="divider-2" />
+							Social media <span className="divider-2" />
 						</h2>
 					</div>
 					<div className="text__wrapper">
@@ -254,7 +252,7 @@ function Third() {
 						</a>
 					</div>
 				</div>
-			</div>
+			</div> */}
 
 			{/**--------------------------------------- */}
 
@@ -268,25 +266,10 @@ const Wrapper = styled.div`
 	/* width: 100vw; */
 	height: 370vh;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	background: var(--darkGrey);
 	flex-direction: column;
-	/* align-items: center; */
-
-	.highlight-link {
-		text-decoration: none;
-		color: var(--paleBlue);
-		display: inline-block;
-		transition: all 0.2s ease-in-out;
-		box-sizing: border-box;
-		text-decoration: none;
-		box-shadow: inset 0 -10px 0 var(--paleBlue);
-		&:hover {
-			box-shadow: inset 0 -55px 0 0 var(--paleBlue);
-			color: white;
-		}
-	}
 
 	.title {
 		/* border: solid red; */
@@ -301,6 +284,7 @@ const Wrapper = styled.div`
 		width: 15rem;
 		display: block;
 	}
+
 	.divider-2 {
 		border: solid var(--paleBlue);
 		background-color: var(--paleBlue);
@@ -420,6 +404,247 @@ const Wrapper = styled.div`
 			text-align: right;
 		}
 	}
+
+	@media screen and (max-width: 1500px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.project__wrapper {
+			/* border: solid red; */
+			height: 30rem;
+			width: 55rem;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			color: var(--white);
+		}
+
+		.img__wrapper {
+			/* border: solid blue; */
+			height: 100%;
+			width: 70%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				height: 25rem;
+			}
+		}
+
+		.title__wrapper {
+			/* border: solid blue; */
+			height: 17%;
+			text-align: right;
+			width: 100%;
+		}
+
+		.text__wrapper {
+			/* border: solid blue; */
+			height: 22%;
+		}
+
+		.links {
+			/* border: solid pink; */
+			margin-left: 10rem;
+			justify-content: space-evenly;
+
+			.Gitcon {
+				/* border: solid red; */
+				height: 2.6rem;
+				width: 2.6rem;
+				text-decoration: none;
+				color: var(--white);
+			}
+
+			.Foldercon {
+				height: 2rem;
+				width: 2rem;
+				text-decoration: none;
+				color: var(--white);
+			}
+
+			h1 {
+				margin-top: 2rem;
+				text-align: right;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1100px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.divider-2 {
+			display: none;
+		}
+
+		.title {
+			/* border: solid red; */
+			height: 7rem;
+			font-size: 0.8rem;
+			color: var(--white);
+		}
+
+		.project__wrapper {
+			border: solid thin var(--sealthGrey);
+			border-radius: 5%;
+			height: 19%;
+			width: 80%;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			flex-direction: column;
+			color: var(--white);
+		}
+
+		.img__wrapper {
+			/* border: solid blue; */
+			height: 50%;
+			width: 80%;
+			border-radius: 3%;
+
+			img {
+				height: 22rem;
+			}
+		}
+
+		.project__info {
+			/* border: solid red; */
+			height: 40%;
+			width: 80%;
+			/* background-color: var(--sealthGrey); */
+			border-radius: 2%;
+		}
+
+		.title__wrapper {
+			/* border: solid blue; */
+			height: 15%;
+			width: 50%;
+			text-align: center;
+			h2 {
+				font-size: 1rem;
+			}
+		}
+		.text__wrapper {
+			/* border: solid white; */
+			height: 50%;
+			width: 100%;
+			margin-right: 0rem;
+			display: flex;
+			/* justify-content: center; */
+			align-items: center;
+			background-color: transparent;
+			color: var(--black);
+			opacity: 0.8;
+		}
+		.links {
+			height: 10%;
+			margin-left: 0rem;
+			justify-content: space-evenly;
+
+			.Gitcon {
+				/* border: solid red; */
+				height: 2.2rem;
+				width: 2.2rem;
+				text-decoration: none;
+				color: var(--white);
+			}
+
+			.Foldercon {
+				height: 1.7rem;
+				width: 1.7rem;
+				text-decoration: none;
+				color: var(--white);
+			}
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		/* height: 650vh; */
+	}
+
+	@media screen and (max-width: 700px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.title__wrapper {
+			h2 {
+				font-size: 0.9rem;
+			}
+		}
+
+		.text {
+			p {
+				font-size: 0.9rem;
+				text-align: left;
+				margin: 0rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.title {
+			h1 {
+				font-size: 1.3rem;
+			}
+		}
+
+		.divider-2 {
+			display: none;
+		}
+		.project__info {
+			/* border: solid red; */
+			width: 100%;
+			/* background-color: var(--sealthGrey); */
+			border-radius: 2%;
+		}
+
+		.img__wrapper {
+			/* border: solid blue; */
+			height: 50%;
+			width: 100%;
+			border-radius: 3%;
+
+			img {
+				height: 22rem;
+			}
+		}
+
+		.title__wrapper {
+			width: 100%;
+			/* border: solid blue; */
+			h2 {
+				font-size: 0.9rem;
+			}
+		}
+
+		.text {
+			/* display: none; */
+			/* border: solid white; */
+			p {
+				font-size: 0.7rem;
+				margin: 0rem;
+			}
+		}
+	}
 `;
 
 export default Third;
+
+{
+	/**
+title__wrapper
+text__wrapper
+text
+links
+*/
+}

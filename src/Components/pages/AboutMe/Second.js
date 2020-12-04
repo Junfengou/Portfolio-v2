@@ -206,8 +206,8 @@ const Wrapper = styled.div`
 
 		img {
 			/* border: solid red; */
-			height: 10rem;
-			width: 10rem;
+			height: 9.5rem;
+			width: 9.5rem;
 			border-radius: 100%;
 			object-fit: contain;
 		}
