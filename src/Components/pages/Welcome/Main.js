@@ -27,6 +27,7 @@ const Wrapper = styled.div`
 	/* border: solid red; */
 	/* width: 100vw; */
 	height: 100vh;
+	/* width: 100vw; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -37,7 +38,7 @@ const Wrapper = styled.div`
 		height: 100vh;
 		width: 100%;
 		/* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
-		background-image: linear-gradient(120deg, #a1c4fd 100%, #c2e9fb 100%);
+		background-image: linear-gradient(180deg, #a1c4fd 50%, #c2e9fb 100%);
 		opacity: 0.7;
 		display: flex;
 		justify-content: center;
