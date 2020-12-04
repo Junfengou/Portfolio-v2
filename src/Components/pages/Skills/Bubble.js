@@ -22,5 +22,32 @@ const Wrapper = styled.div`
 	h4 {
 		font-size: 0.9rem;
 	}
+
+	@media screen and (max-width: 1000px) {
+		width: 5.5rem;
+		height: 5.5rem;
+
+		h4 {
+			font-size: 0.9rem;
+		}
+	}
+
+	@media screen and (max-width: 450px) {
+		width: 4.5rem;
+		height: 4.5rem;
+
+		h4 {
+			font-size: 0.8rem;
+		}
+	}
+
+	@media screen and (max-width: 300px) {
+		width: 4.5rem;
+		height: 4.5rem;
+
+		h4 {
+			font-size: 0.7rem;
+		}
+	}
 `;
 export default Bubble;

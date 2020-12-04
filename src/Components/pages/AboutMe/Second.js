@@ -111,13 +111,14 @@ const Wrapper = styled.div`
 
 	img {
 		/* border: solid red; */
+		border: solid thick var(--paleBlue);
 		height: 18rem;
 		width: 18rem;
 		border-radius: 100%;
 		object-fit: contain;
 	}
 
-	@media (max-width: 1400px) {
+	@media screen and (max-width: 1400px) {
 		height: 120vh;
 		/* border: solid red; */
 		flex-direction: column-reverse;
@@ -158,7 +159,7 @@ const Wrapper = styled.div`
 		}
 	}
 
-	@media (max-width: 1024px) {
+	@media screen and (max-width: 1024px) {
 		.left_wrapper {
 			/* border: solid red; */
 			height: 25%;
@@ -166,11 +167,18 @@ const Wrapper = styled.div`
 		}
 	}
 
-	@media (max-width: 770px) {
+	@media screen and (max-width: 770px) {
 		.left_wrapper {
 			/* border: solid red; */
 			height: 60%;
 			width: 70%;
+		}
+
+		img {
+			height: 11rem;
+			width: 11rem;
+			border-radius: 100%;
+			object-fit: contain;
 		}
 	}
 
@@ -182,7 +190,7 @@ const Wrapper = styled.div`
 		}
 	} */
 
-	@media (max-width: 400px) and (max-height: 800px) {
+	@media screen and (max-width: 400px) and (max-height: 800px) {
 		.left_wrapper {
 			/* border: solid red; */
 			height: 60%;
@@ -198,8 +206,8 @@ const Wrapper = styled.div`
 
 		img {
 			/* border: solid red; */
-			height: 11rem;
-			width: 11rem;
+			height: 10rem;
+			width: 10rem;
 			border-radius: 100%;
 			object-fit: contain;
 		}
