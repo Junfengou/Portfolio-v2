@@ -3,20 +3,22 @@ import styled from "styled-components";
 import "./Main.css";
 import { BsCaretDown } from "react-icons/bs";
 import { Link } from "react-scroll";
+import RubberBand from "react-reveal/RubberBand";
 
 function Main() {
 	return (
 		<Wrapper className="bg">
 			<div className="box">
-				<div className="text__wrapper">
-					<h1>Junfeng Ou</h1>
-					<h3>Front end developer</h3>
-				</div>
+				<RubberBand>
+					<div className="text__wrapper">
+						<h1>Junfeng Ou</h1>
+						<h3>Front end developer</h3>
+					</div>
+				</RubberBand>
 				<div className="btn__wrapper">
 					<Link to="about">
 						<BsCaretDown className="icon" />
 					</Link>
-					<Link to="about"></Link>
 				</div>
 			</div>
 		</Wrapper>

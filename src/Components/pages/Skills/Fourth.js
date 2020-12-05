@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Bubble from "./Bubble";
+import Fade from "react-reveal/Fade";
 
 function Fourth() {
 	return (
@@ -9,15 +10,43 @@ function Fourth() {
 				<div className="stack">
 					<h3>Development</h3>
 				</div>
+
 				<div className="stack__info">
-					<Bubble data="React" />
-					<Bubble data="HTML" />
-					<Bubble data="CSS" />
+					<Fade top>
+						<Bubble data="HTML5" />
+					</Fade>
+					<Fade left>
+						<Bubble data="CSS3" />
+					</Fade>
+					<Fade right>
+						<Bubble data="React" />
+					</Fade>
+					<Fade bottom>
+						<Bubble data="Material-UI" />
+					</Fade>
+					<Fade top>
+						<Bubble data="Node.JS" />
+					</Fade>
+					<Fade left>
+						<Bubble data="Bcrypt.JS" />
+					</Fade>
+					<Fade right>
+						<Bubble data="Express.JS" />
+					</Fade>
+					<Fade bottom>
+						<Bubble data="MongoDB" />
+					</Fade>
+					<Fade top>
+						<Bubble data="GSAP" />
+					</Fade>
+					{/* <Bubble data="HTML5" />
+					<Bubble data="CSS3" />
 					<Bubble data="GSAP" />
 					<Bubble data="Material-UI" />
 					<Bubble data="Node.JS" />
 					<Bubble data="Bcrypt.JS" />
-					<Bubble data="MongoDB" />
+					<Bubble data="Express.js" />
+					<Bubble data="MongoDB" /> */}
 				</div>
 			</div>
 			<div className="info__container">
@@ -25,11 +54,26 @@ function Fourth() {
 					<h3>Expoosure</h3>
 				</div>
 				<div className="stack__info">
-					<Bubble data="Java" />
+					<Fade top>
+						<Bubble data="Java" />
+					</Fade>
+					<Fade left>
+						<Bubble data="Python" />
+					</Fade>
+					<Fade right>
+						<Bubble data="Django" />
+					</Fade>
+					<Fade bottom>
+						<Bubble data="GraphQL" />
+					</Fade>
+					<Fade top>
+						<Bubble data="MySQL" />
+					</Fade>
+					{/* <Bubble data="Java" />
 					<Bubble data="Python" />
 					<Bubble data="Django" />
 					<Bubble data="GraphQL" />
-					<Bubble data="MySQL" />
+					<Bubble data="MySQL" /> */}
 				</div>
 			</div>
 			<div className="info__container">
@@ -37,13 +81,35 @@ function Fourth() {
 					<h3>Tools</h3>
 				</div>
 				<div className="stack__info">
-					<Bubble data="Github" />
+					<Fade top>
+						<Bubble data="Github" />
+					</Fade>
+					<Fade left>
+						<Bubble data="Comd Line" />
+					</Fade>
+					<Fade right>
+						<Bubble data="Postman" />
+					</Fade>
+					<Fade bottom>
+						<Bubble data="Insomnia" />
+					</Fade>
+					<Fade top>
+						<Bubble data="Photoshop" />
+					</Fade>
+					<Fade left>
+						<Bubble data="Figma" />
+					</Fade>
+					<Fade right>
+						<Bubble data="Firebase" />
+					</Fade>
+
+					{/* <Bubble data="Github" />
 					<Bubble data="Comd Line" />
 					<Bubble data="Postman" />
 					<Bubble data="Insomnia" />
 					<Bubble data="Photoshop" />
 					<Bubble data="Figma" />
-					<Bubble data="Firebase" />
+					<Bubble data="Firebase" /> */}
 				</div>
 			</div>
 		</Wrapper>

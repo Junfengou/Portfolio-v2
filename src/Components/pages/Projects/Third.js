@@ -9,6 +9,8 @@ import shop from "../../../images/projects/shop.png";
 import { DiGithubAlt } from "react-icons/di";
 import { BsFolderSymlink } from "react-icons/bs";
 
+import Roll from "react-reveal/Roll";
+
 function Third() {
 	return (
 		<Wrapper>
@@ -19,9 +21,11 @@ function Third() {
 			</div>
 
 			<div className="project__wrapper">
-				<div className="img__wrapper">
-					<img src={github} alt="github" />{" "}
-				</div>
+				<Roll left>
+					<div className="img__wrapper">
+						<img src={github} alt="github" />{" "}
+					</div>
+				</Roll>
 				<div className="project__info">
 					<div className="title__wrapper">
 						<h2>
@@ -60,50 +64,54 @@ function Third() {
 				<div className="img__wrapper">
 					<img src={fish} alt="github" />{" "}
 				</div>
-				<div className="project__info">
-					<div className="title__wrapper">
-						<h2>
-							Restaurant Menu <span className="divider-2" />
-						</h2>
-					</div>
-					<div className="text__wrapper">
-						<div className="text">
-							<p>
-								A menu like application built with React and hosted on Firebase.
-								Maybe I'll start my own restaurant one day...
-							</p>
+				<Roll right>
+					<div className="project__info">
+						<div className="title__wrapper">
+							<h2>
+								Restaurant Menu <span className="divider-2" />
+							</h2>
+						</div>
+						<div className="text__wrapper">
+							<div className="text">
+								<p>
+									A menu like application built with React and hosted on
+									Firebase. Maybe I'll start my own restaurant one day...
+								</p>
+							</div>
+						</div>
+
+						<div className="links">
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href="https://github.com/Junfengou/Catch-of-the-day"
+							>
+								<DiGithubAlt className="Gitcon" />
+							</a>
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href=" https://fresh-catch-756af.web.app/"
+							>
+								<BsFolderSymlink className="Foldercon" />
+							</a>
 						</div>
 					</div>
-
-					<div className="links">
-						<a
-							target="_blank"
-							rel="noreferrer"
-							href="https://github.com/Junfengou/Catch-of-the-day"
-						>
-							<DiGithubAlt className="Gitcon" />
-						</a>
-						<a
-							target="_blank"
-							rel="noreferrer"
-							href=" https://fresh-catch-756af.web.app/"
-						>
-							<BsFolderSymlink className="Foldercon" />
-						</a>
-					</div>
-				</div>
+				</Roll>
 			</div>
 
 			{/**--------------------------------------- */}
 
 			<div className="project__wrapper">
-				<div className="img__wrapper">
-					<img src={covid} alt="github" />{" "}
-				</div>
+				<Roll left>
+					<div className="img__wrapper">
+						<img src={covid} alt="github" />{" "}
+					</div>
+				</Roll>
 				<div className="project__info">
 					<div className="title__wrapper">
 						<h2>
-							Covid Tracker <span className="divider-2" />
+							Coronavirus Tracker <span className="divider-2" />
 						</h2>
 					</div>
 					<div className="text__wrapper">
@@ -137,47 +145,51 @@ function Third() {
 				<div className="img__wrapper">
 					<img src={netflix} alt="github" />{" "}
 				</div>
-				<div className="project__info">
-					<div className="title__wrapper">
-						<h2>
-							Netflix clone <br />
-							<span className="divider-2" />
-						</h2>
-					</div>
-					<div className="text__wrapper">
-						<div className="text">
-							<p>
-								I created this netflix frontend clone to as an excuse to
-								exercise my frontend styling skills
-							</p>
+				<Roll right>
+					<div className="project__info">
+						<div className="title__wrapper">
+							<h2>
+								Netflix clone <br />
+								<span className="divider-2" />
+							</h2>
+						</div>
+						<div className="text__wrapper">
+							<div className="text">
+								<p>
+									I created this netflix frontend clone to as an excuse to
+									exercise my frontend styling skills
+								</p>
+							</div>
+						</div>
+
+						<div className="links">
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href="https://github.com/Junfengou/Netflix-clone-react"
+							>
+								<DiGithubAlt className="Gitcon" />
+							</a>
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href="https://netflix-clone-ff957.web.app/"
+							>
+								<BsFolderSymlink className="Foldercon" />
+							</a>
 						</div>
 					</div>
-
-					<div className="links">
-						<a
-							target="_blank"
-							rel="noreferrer"
-							href="https://github.com/Junfengou/Netflix-clone-react"
-						>
-							<DiGithubAlt className="Gitcon" />
-						</a>
-						<a
-							target="_blank"
-							rel="noreferrer"
-							href="https://netflix-clone-ff957.web.app/"
-						>
-							<BsFolderSymlink className="Foldercon" />
-						</a>
-					</div>
-				</div>
+				</Roll>
 			</div>
 
 			{/**--------------------------------------- */}
 
 			<div className="project__wrapper">
-				<div className="img__wrapper">
-					<img src={shop} alt="github" />{" "}
-				</div>
+				<Roll left>
+					<div className="img__wrapper">
+						<img src={shop} alt="github" />{" "}
+					</div>
+				</Roll>
 				<div className="project__info">
 					<div className="title__wrapper">
 						<h2>
@@ -639,12 +651,3 @@ const Wrapper = styled.div`
 `;
 
 export default Third;
-
-{
-	/**
-title__wrapper
-text__wrapper
-text
-links
-*/
-}

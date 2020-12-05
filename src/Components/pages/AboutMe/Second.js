@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Me from "../../../images/Me.jpg";
 import Resume from "../../../document/Resume.pdf";
+import Fade from "react-reveal/Fade";
 function Second() {
 	return (
 		<Wrapper>
@@ -34,7 +35,9 @@ function Second() {
 			</div>
 			<div className="right_wrapper">
 				<div className="photo__bubble">
-					<img src={Me} alt="me" />
+					<Fade right>
+						<img src={Me} alt="me" />
+					</Fade>
 				</div>
 			</div>
 		</Wrapper>
@@ -196,9 +199,12 @@ const Wrapper = styled.div`
 			height: 60%;
 			width: 85%;
 		}
-		h2,
+		h2 {
+			font-size: 1.1rem;
+		}
+
 		h3 {
-			font-size: 1rem;
+			font-size: 0.9rem;
 		}
 		p {
 			font-size: 0.8rem;
