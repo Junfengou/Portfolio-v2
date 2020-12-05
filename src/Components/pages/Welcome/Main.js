@@ -85,14 +85,14 @@ const Wrapper = styled.div`
 		cursor: pointer;
 	}
 
-	@media screen and (max-width: 750px) {
+	@media screen and (max-width: 750px) and (max-height: 400px) {
 		h1 {
-			font-size: 3rem;
+			font-size: 2.5rem;
 			z-index: 2;
 		}
 
 		h3 {
-			font-size: 1.4rem;
+			font-size: 1rem;
 			/* border: solid red; */
 			margin-top: -1.7rem;
 		}

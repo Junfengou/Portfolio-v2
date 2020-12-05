@@ -28,10 +28,10 @@ function Second() {
 						work with those who are willing to share their knowledges.
 					</p>
 					{/* <p>I'm a self taught front end developer</p> */}
+					<a target="_blank" rel="noreferrer" href={Resume}>
+						<button>Download Resume</button>
+					</a>
 				</div>
-				<a target="_blank" rel="noreferrer" href={Resume}>
-					<button>Download Resume</button>
-				</a>
 			</div>
 			<div className="right_wrapper">
 				<div className="photo__bubble">
@@ -122,7 +122,7 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 1400px) {
-		height: 120vh;
+		height: 130vh;
 		/* border: solid red; */
 		flex-direction: column-reverse;
 
@@ -138,18 +138,20 @@ const Wrapper = styled.div`
 
 		.text_area {
 			/* border: solid blue; */
-			height: 100%;
+			/* height: 100%; */
+			height: 80%;
 			width: 100%;
 			margin-left: 0rem;
 		}
 
 		button {
+			/* border: solid red !important; */
 			margin-left: 0rem !important;
 		}
 
 		.right_wrapper {
 			/* border: solid blue; */
-			height: 33%;
+			height: 15%;
 			width: 30%;
 		}
 
@@ -216,6 +218,24 @@ const Wrapper = styled.div`
 			width: 9.5rem;
 			border-radius: 100%;
 			object-fit: contain;
+		}
+	}
+
+	@media screen and (max-width: 1200px) and (max-height: 800px) {
+		/* height: 220vh; */
+		.left_wrapper {
+			/* border: solid red; */
+			/* height: 60%;
+			width: 85%; */
+		}
+	}
+
+	@media screen and (max-width: 850px) and (max-height: 450px) {
+		height: 230vh;
+		.left_wrapper {
+			/* border: solid red; */
+			/* height: 60%;
+			width: 85%; */
 		}
 	}
 `;

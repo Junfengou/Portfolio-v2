@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { ImGithub } from "react-icons/im";
+import Jello from "react-reveal/Jello";
 
 function Contact() {
 	return (
@@ -13,9 +14,11 @@ function Contact() {
 					I am actively looking for projects and open for any opportunities. If
 					you're interested, you can react me here!
 				</p>
-				<a href="mailto:junfengou@gmail.com">
-					<button>Contact me!</button>
-				</a>
+				<Jello>
+					<a href="mailto:junfengou@gmail.com">
+						<button>Contact me!</button>
+					</a>
+				</Jello>
 				<div className="icons">
 					<div className="icon">
 						<a
