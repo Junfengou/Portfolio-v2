@@ -199,6 +199,38 @@ const Wrapper = styled.div`
 			/* border: solid blue; */
 		}
 	}
+
+	@media screen and (max-width: 850px) and (max-height: 1100px) {
+		height: 70vh;
+		.container {
+			/* border: solid red; */
+			height: 56%;
+			h2 {
+				font-size: 0.9rem;
+			}
+			p {
+				font-size: 0.7rem;
+			}
+
+			button {
+				height: 2.2rem;
+				width: 7rem;
+			}
+			.icons {
+				/* border: solid blue; */
+				width: 70%;
+				height: 20%;
+			}
+
+			.react_icon {
+				margin-top: 1rem;
+				height: 1.3rem;
+				width: 1.3rem;
+				color: var(--paleBlue);
+				/* border: solid blue; */
+			}
+		}
+	}
 `;
 
 export default Contact;

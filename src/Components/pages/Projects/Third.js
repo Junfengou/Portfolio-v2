@@ -648,6 +648,15 @@ const Wrapper = styled.div`
 			}
 		}
 	}
+	@media screen and (max-width: 850px) and (max-height: 450px) {
+		height: 900vh;
+		.project__wrapper {
+			/* border: solid red; */
+			height: 35%;
+			width: 60%;
+		}
+		/* height: 300vh; */
+	}
 `;
 
 export default Third;

@@ -298,6 +298,11 @@ const Wrapper = styled.div`
 			grid-template-columns: 1fr 1fr;
 		}
 	}
+
+	@media screen and (max-width: 850px) and (max-height: 450px) {
+		/* border: solid red; */
+		height: 300vh;
+	}
 `;
 
 export default Fourth;

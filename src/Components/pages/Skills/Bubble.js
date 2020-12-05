@@ -42,6 +42,17 @@ const Wrapper = styled.div`
 		}
 	}
 
+	@media screen and (max-width: 850px) and (max-height: 450px) {
+		/* border: solid red; */
+		width: 4.3rem;
+		height: 4.3rem;
+
+		h4 {
+			font-size: 0.7rem;
+		}
+		/* height: 300vh; */
+	}
+
 	@media screen and (max-width: 300px) {
 		width: 4.5rem;
 		height: 4.5rem;
