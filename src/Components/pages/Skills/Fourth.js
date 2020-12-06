@@ -51,7 +51,7 @@ function Fourth() {
 			</div>
 			<div className="info__container">
 				<div className="stack">
-					<h3>Expoosure</h3>
+					<h3>Exposure</h3>
 				</div>
 				<div className="stack__info">
 					<Fade top>

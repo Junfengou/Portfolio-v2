@@ -1,4 +1,6 @@
 .bg {
-	/* background: url(../../../images/ThiBG.jpg) no-repeat center center; */
-	background: url(../../../images/MainBG.jpg) no-repeat center center;
+	background: url(../../../images/ThiBG.jpg) no-repeat center center;
+	/* background: url(../../../images/coffee.jpg) no-repeat center center fixed; */
+	background-size: cover;
+	background-position: center;
 }

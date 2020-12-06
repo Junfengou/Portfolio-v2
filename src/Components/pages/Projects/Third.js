@@ -51,7 +51,11 @@ function Third() {
 						>
 							<DiGithubAlt className="Gitcon" />
 						</a>
-						<a target="_blank" rel="noreferrer" href="">
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href="https://github-tracker-bd553.web.app/"
+						>
 							<BsFolderSymlink className="Foldercon" />
 						</a>
 					</div>
@@ -132,7 +136,11 @@ function Third() {
 						>
 							<DiGithubAlt className="Gitcon" />
 						</a>
-						<a target="_blank" rel="noreferrer" href="">
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href="https://covidtracker-c62c2.web.app/"
+						>
 							<BsFolderSymlink className="Foldercon" />
 						</a>
 					</div>
