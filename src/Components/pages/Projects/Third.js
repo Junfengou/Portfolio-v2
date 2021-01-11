@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import covid from "../../../images/projects/virus.png";
-import github from "../../../images/projects/git.png";
-import fish from "../../../images/projects/catch.png";
-import social from "../../../images/projects/social.png";
-import netflix from "../../../images/projects/netflix.png";
+import covid from "../../../images/gifs/cov.gif";
+import github from "../../../images/gifs/git.gif";
+import sick from "../../../images/gifs/sick.gif";
+import netflix from "../../../images/gifs/net.gif";
 import shop from "../../../images/projects/shop.png";
+import Boxes from "./Boxes";
+import Fade from "react-reveal/Fade";
+
 import { DiGithubAlt } from "react-icons/di";
 import { BsFolderSymlink } from "react-icons/bs";
 
@@ -66,20 +68,20 @@ function Third() {
 
 			<div className="project__wrapper">
 				<div className="img__wrapper">
-					<img src={fish} alt="github" />{" "}
+					<img src={sick} alt="github" />{" "}
 				</div>
 				<Roll right>
 					<div className="project__info">
 						<div className="title__wrapper">
 							<h2>
-								Restaurant Menu <span className="divider-2" />
+								Sick Fits Online Store <span className="divider-2" />
 							</h2>
 						</div>
 						<div className="text__wrapper">
 							<div className="text">
 								<p>
-									A menu like application built with React and hosted on
-									Firebase. Maybe I'll start my own restaurant one day...
+									Wes Bos' fullstack course built with React, Apollo, Graphql
+									and bunch of other goodies in the mix!
 								</p>
 							</div>
 						</div>
@@ -164,8 +166,9 @@ function Third() {
 						<div className="text__wrapper">
 							<div className="text">
 								<p>
-									I created this netflix frontend clone to as an excuse to
-									exercise my frontend styling skills
+									A netflix clone with all the latest movies and shows displayed
+									on the big screen. Nothing too crazy, just something to
+									practice css
 								</p>
 							</div>
 						</div>
@@ -191,92 +194,55 @@ function Third() {
 			</div>
 
 			{/**--------------------------------------- */}
+			<div className="box_section">
+				<Fade left>
+					<Boxes
+						title="Restaurant menu"
+						desc="Wes Bos' beginner to react course which help me tremedously on my journey"
+						github="https://github.com/Junfengou/Catch-of-the-day"
+					/>
+				</Fade>
 
-			<div className="project__wrapper">
-				<Roll left>
-					<div className="img__wrapper">
-						<img src={shop} alt="github" />{" "}
-					</div>
-				</Roll>
-				<div className="project__info">
-					<div className="title__wrapper">
-						<h2>
-							PhoneStop <br />
-							<span className="divider-2" />
-						</h2>
-					</div>
-					<div className="text__wrapper">
-						<div className="text">
-							<p>
-								Check out PhoneStop where I will sell you outdated phone for
-								fraction of the price when they were new...like 10 years ago.
-							</p>
-						</div>
-					</div>
+				<Fade top>
+					<Boxes
+						title="Restaurant menu"
+						desc="Wes Bos' beginner to react course which help me tremedously on my journey"
+						github="https://github.com/Junfengou/Catch-of-the-day"
+					/>
+				</Fade>
 
-					<div className="links">
-						<a
-							target="_blank"
-							rel="noreferrer"
-							href="https://github.com/Junfengou/E-commerce-React"
-						>
-							<DiGithubAlt className="Gitcon" />
-						</a>
-						<a
-							target="_blank"
-							rel="noreferrer"
-							href="https://phone-store-ecommerce.firebaseapp.com/"
-						>
-							<BsFolderSymlink className="Foldercon" />
-						</a>
-					</div>
-				</div>
+				<Fade right>
+					<Boxes
+						title="SpaceX rockets"
+						desc="Here is a list of data about SpaceX's rockets. Maybe one day Elon Musk will lead us to Mars"
+						github=""
+					/>
+				</Fade>
+
+				<Fade left>
+					<Boxes
+						title="Weather app"
+						desc="A simple weather app that will help you dress appropriately in the morning before you head out the door!"
+						github=""
+					/>
+				</Fade>
+
+				<Fade bottom>
+					<Boxes
+						title="Quiz app w/typescript"
+						desc="How much video game do you really know? Can you really call yourself a true gamer?"
+						github="https://github.com/Junfengou/Quiz-app-typescript"
+					/>
+				</Fade>
+
+				<Fade right>
+					<Boxes
+						title="Social media app with Django"
+						desc="My very first web project! A small social platform where users can post whatever they want. I promise I won't censor you. xD"
+						github="http://marshpillow.pythonanywhere.com/"
+					/>
+				</Fade>
 			</div>
-
-			{/**--------------------------------------- */}
-
-			{/* <div className="project__wrapper">
-				<div className="img__wrapper">
-					<img src={social} alt="github" />{" "}
-				</div>
-				<div className="project__info">
-					<div className="title__wrapper">
-						<h2>
-							Social media <span className="divider-2" />
-						</h2>
-					</div>
-					<div className="text__wrapper">
-						<div className="text">
-							<p>
-								This is my first web application I made while learning Python
-								and Django. A simple social media platform where users can post
-								contents on anything.
-							</p>
-						</div>
-					</div>
-
-					<div className="links">
-						<a
-							target="_blank"
-							rel="noreferrer"
-							href="https://github.com/Junfengou/Social-media-company"
-						>
-							<DiGithubAlt className="Gitcon" />
-						</a>
-						<a
-							target="_blank"
-							rel="noreferrer"
-							href="http://marshpillow.pythonanywhere.com/"
-						>
-							<BsFolderSymlink className="Foldercon" />
-						</a>
-					</div>
-				</div>
-			</div> */}
-
-			{/**--------------------------------------- */}
-
-			{/* <div className="project__wrapper"></div> */}
 		</Wrapper>
 	);
 }
@@ -284,12 +250,13 @@ function Third() {
 const Wrapper = styled.div`
 	/* border: solid green; */
 	/* width: 100vw; */
-	height: 370vh;
+	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background: var(--darkGrey);
 	flex-direction: column;
+	font-family: "Kanit", sans-serif;
 
 	.title {
 		/* border: solid red; */
@@ -322,6 +289,7 @@ const Wrapper = styled.div`
 		justify-content: space-evenly;
 		align-items: center;
 		color: var(--white);
+		margin-top: 1.5rem;
 	}
 
 	/* .filter {
@@ -332,19 +300,18 @@ const Wrapper = styled.div`
 
 	.img__wrapper {
 		/* border: solid blue; */
-		height: 85%;
-		width: 70%;
+		height: 55%;
+		width: 45%;
 		overflow: hidden;
 
 		img {
-			height: 30rem;
+			height: 18rem;
+			width: 30rem;
 			object-fit: contain;
-			border-radius: 5%;
-			filter: invert(15%);
-		}
-
-		img:hover {
-			filter: none;
+			border-radius: 2%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 
@@ -423,6 +390,18 @@ const Wrapper = styled.div`
 			margin-top: 2rem;
 			text-align: right;
 		}
+	}
+
+	.box_section {
+		/* margin-top: 1.5rem; */
+		width: 80%;
+		height: 40rem;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		justify-items: center;
+		align-items: center;
 	}
 
 	@media screen and (max-width: 1500px) {

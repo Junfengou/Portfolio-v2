@@ -8,28 +8,40 @@ function Second() {
 		<Wrapper>
 			<div className="left_wrapper">
 				<div className="text_area">
-					<h2>Hi! My name is Jun</h2>
+					<h2>Hi. My name is Jun</h2>
 					<h3>
-						Welcome to my portfolio. <span className="divider" />
+						Welcome to my portfolio! <span className="divider" />
 					</h3>
 
 					<p>
-						I am a college student at University of Omaha Nebraska studying
-						Management Information System. Although I am not a genius by any
-						mean when it comes to complex algorithms, I do enjoy building
-						websites. From simple landing pages with HTML and CSS to complex
-						frontend framework with RESTful API. I strive to provide users with
-						good experience when navigating my projects.
+						I am a highly motivated college student who loves to explore the
+						possibilities of the web. I started my journey as a frontend
+						developer about a year ago and I love everything this career path
+						has to offer. The little I learned in college has left me hungary
+						for more. Little by little, I felt in love this craft. It all
+						started with a weekend search and turn into a year long adventure
+						with so much more left to discovered!
 					</p>
+
 					<p>
-						I love learning new materials during my free time to further improve
-						and hone my skills as a web developer. I enjoy talking to people in
-						the computer science field and always looking for opportunities to
-						work with those who are willing to share their knowledges.
+						My journey as a web dev started when I discovered Django web
+						development course in my school. After completing the course, I
+						decided to explore slightly different route, and that's when I
+						discovered React. I felt in love with the framework and I can't stop
+						learning it! From simple landing pages with HTML and CSS to complex
+						frontend with RESTful API. I strive to provide users with good
+						experience when navigating my projects.
 					</p>
-					{/* <p>I'm a self taught front end developer</p> */}
+
+					<p>
+						When I'm not staring at codes, I'm probably either walking my dog,
+						trying out new cooking recipes, or binge watch TV shows when the
+						entire season is released. Occasionally, I like take my car down to
+						the track and run a few laps if the weather holds up.
+					</p>
+
 					<a target="_blank" rel="noreferrer" href={Resume}>
-						<button>Download Resume</button>
+						<button>My Resume</button>
 					</a>
 				</div>
 			</div>
@@ -53,7 +65,7 @@ const Wrapper = styled.div`
 	align-items: center;
 	background: var(--darkGrey);
 	color: var(--white);
-
+	font-family: "Kanit", sans-serif;
 	.left_wrapper {
 		/* border: solid red; */
 		height: 100%;

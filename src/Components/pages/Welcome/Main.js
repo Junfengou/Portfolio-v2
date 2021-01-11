@@ -12,7 +12,7 @@ function Main() {
 				<RubberBand>
 					<div className="text__wrapper">
 						<h1>Junfeng Ou</h1>
-						<h3>Front end developer</h3>
+						<h3>Frontend developer</h3>
 					</div>
 				</RubberBand>
 				<div className="btn__wrapper">
@@ -33,6 +33,7 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 	.box {
 		/* border: solid blue; */
 		height: 100vh;
@@ -67,14 +68,17 @@ const Wrapper = styled.div`
 	}
 
 	h1 {
-		font-size: 4rem;
+		font-size: 6rem;
 		z-index: 2;
+		opacity: 3;
+		font-family: "Monoton", sans-serif;
 	}
 
 	h3 {
-		font-size: 1.5rem;
+		font-size: 2.5rem;
 		/* border: solid red; */
 		margin-top: -1.7rem;
+		font-family: "Kanit", sans-serif;
 	}
 	/* align-items: center; */
 

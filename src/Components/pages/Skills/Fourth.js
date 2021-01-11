@@ -28,7 +28,7 @@ function Fourth() {
 						<Bubble data="Node.JS" />
 					</Fade>
 					<Fade left>
-						<Bubble data="Bcrypt.JS" />
+						<Bubble data="Styled comp" />
 					</Fade>
 					<Fade right>
 						<Bubble data="Express.JS" />
@@ -37,7 +37,7 @@ function Fourth() {
 						<Bubble data="MongoDB" />
 					</Fade>
 					<Fade top>
-						<Bubble data="GSAP" />
+						<Bubble data="and more..." />
 					</Fade>
 					{/* <Bubble data="HTML5" />
 					<Bubble data="CSS3" />
@@ -55,19 +55,29 @@ function Fourth() {
 				</div>
 				<div className="stack__info">
 					<Fade top>
-						<Bubble data="Java" />
-					</Fade>
-					<Fade left>
 						<Bubble data="Python" />
 					</Fade>
-					<Fade right>
+					<Fade left>
 						<Bubble data="Django" />
 					</Fade>
-					<Fade bottom>
+					<Fade right>
 						<Bubble data="GraphQL" />
 					</Fade>
-					<Fade top>
+					<Fade bottom>
 						<Bubble data="MySQL" />
+					</Fade>
+					<Fade top>
+						<Bubble data="Prisma" />
+					</Fade>
+
+					<Fade left>
+						<Bubble data="Apollo Client" />
+					</Fade>
+					<Fade right>
+						<Bubble data="Bootstrap 4" />
+					</Fade>
+					<Fade bottom>
+						<Bubble data="Java" />
 					</Fade>
 					{/* <Bubble data="Java" />
 					<Bubble data="Python" />
@@ -123,6 +133,7 @@ const Wrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: "Kanit", sans-serif;
 	background: var(--darkGrey);
 	color: var(--white);
 

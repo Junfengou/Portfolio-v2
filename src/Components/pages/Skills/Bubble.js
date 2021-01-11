@@ -11,8 +11,8 @@ function Bubble({ data }) {
 }
 
 const Wrapper = styled.div`
-	width: 6rem;
-	height: 6rem;
+	width: 6.5rem;
+	height: 6.5rem;
 	border-radius: 100%;
 	border: solid thin var(--sealthGrey);
 	display: flex;
