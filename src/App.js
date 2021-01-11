@@ -3,6 +3,7 @@ import Landing from "./Components/pages/Welcome/Main";
 import AboutMe from "./Components/pages/AboutMe/Second";
 import Skills from "./Components/pages/Skills/Fourth";
 import MainProjects from "./Components/pages/Projects/Third";
+import SubProjects from "./Components/pages/MoreProjects.js/MoreProject";
 import Contact from "./Components/pages/Contact/Contact";
 import { Section, SectionsSpy } from "react-smart-sections";
 import { Link } from "react-scroll";
@@ -27,6 +28,10 @@ function App() {
 
 			<Section name="PROJECTS">
 				<MainProjects />
+			</Section>
+
+			<Section name="MORE">
+				<SubProjects />
 			</Section>
 
 			<Section name="CONTACT">

@@ -24,15 +24,18 @@ const Wrapper = styled.div`
 	width: 70%;
 	height: 60%;
 	border: solid thin var(--sealthGrey);
+	/* border: solid red; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	border-radius: 2%;
+	margin-left: 5rem;
 	color: var(--offWhite);
 	h2,
 	p {
 		margin-left: 1.5rem;
+		font-size: 1rem;
 	}
 	.head {
 		/* border: solid blue; */
@@ -64,6 +67,37 @@ const Wrapper = styled.div`
 		width: 2rem;
 		text-decoration: none;
 		color: var(--white);
+	}
+
+	@media screen and (max-width: 1200px) {
+		width: 80%;
+		height: 60%;
+		margin-left: 4rem;
+		h2,
+		p {
+			font-size: 1.1rem;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		margin-left: 5rem;
+		width: 65%;
+		height: 60%;
+		h2,
+		p {
+			font-size: 0.9rem;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		margin-left: 3.8rem;
+	}
+
+	@media screen and (max-width: 400px) {
+		margin-top: 3rem;
+		margin-left: 3rem;
+		width: 70%;
+		height: 60%;
 	}
 `;
 

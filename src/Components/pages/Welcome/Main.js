@@ -68,7 +68,7 @@ const Wrapper = styled.div`
 	}
 
 	h1 {
-		font-size: 6rem;
+		font-size: 4rem;
 		z-index: 2;
 		opacity: 3;
 		font-family: "Monoton", sans-serif;

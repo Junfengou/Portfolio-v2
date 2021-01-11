@@ -133,7 +133,7 @@ const Wrapper = styled.div`
 		object-fit: contain;
 	}
 
-	@media screen and (max-width: 1400px) {
+	@media screen and (max-width: 1500px) {
 		height: 130vh;
 		/* border: solid red; */
 		flex-direction: column-reverse;
@@ -207,7 +207,7 @@ const Wrapper = styled.div`
 		}
 	} */
 
-	@media screen and (max-width: 400px) and (max-height: 800px) {
+	@media screen and (max-width: 450px) and (max-height: 900px) {
 		.left_wrapper {
 			/* border: solid red; */
 			height: 60%;
@@ -234,7 +234,7 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 1200px) and (max-height: 800px) {
-		/* height: 220vh; */
+		height: 210vh;
 		.left_wrapper {
 			/* border: solid red; */
 			/* height: 60%;

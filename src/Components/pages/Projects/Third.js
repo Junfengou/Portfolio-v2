@@ -5,8 +5,6 @@ import github from "../../../images/gifs/git.gif";
 import sick from "../../../images/gifs/sick.gif";
 import netflix from "../../../images/gifs/net.gif";
 import shop from "../../../images/projects/shop.png";
-import Boxes from "./Boxes";
-import Fade from "react-reveal/Fade";
 
 import { DiGithubAlt } from "react-icons/di";
 import { BsFolderSymlink } from "react-icons/bs";
@@ -87,11 +85,7 @@ function Third() {
 						</div>
 
 						<div className="links">
-							<a
-								target="_blank"
-								rel="noreferrer"
-								href="https://github.com/Junfengou/Catch-of-the-day"
-							>
+							<a target="_blank" rel="noreferrer" href="#">
 								<DiGithubAlt className="Gitcon" />
 							</a>
 							<a
@@ -194,55 +188,6 @@ function Third() {
 			</div>
 
 			{/**--------------------------------------- */}
-			<div className="box_section">
-				<Fade left>
-					<Boxes
-						title="Restaurant menu"
-						desc="Wes Bos' beginner to react course which help me tremedously on my journey"
-						github="https://github.com/Junfengou/Catch-of-the-day"
-					/>
-				</Fade>
-
-				<Fade top>
-					<Boxes
-						title="Restaurant menu"
-						desc="Wes Bos' beginner to react course which help me tremedously on my journey"
-						github="https://github.com/Junfengou/Catch-of-the-day"
-					/>
-				</Fade>
-
-				<Fade right>
-					<Boxes
-						title="SpaceX rockets"
-						desc="Here is a list of data about SpaceX's rockets. Maybe one day Elon Musk will lead us to Mars"
-						github=""
-					/>
-				</Fade>
-
-				<Fade left>
-					<Boxes
-						title="Weather app"
-						desc="A simple weather app that will help you dress appropriately in the morning before you head out the door!"
-						github=""
-					/>
-				</Fade>
-
-				<Fade bottom>
-					<Boxes
-						title="Quiz app w/typescript"
-						desc="How much video game do you really know? Can you really call yourself a true gamer?"
-						github="https://github.com/Junfengou/Quiz-app-typescript"
-					/>
-				</Fade>
-
-				<Fade right>
-					<Boxes
-						title="Social media app with Django"
-						desc="My very first web project! A small social platform where users can post whatever they want. I promise I won't censor you. xD"
-						github="http://marshpillow.pythonanywhere.com/"
-					/>
-				</Fade>
-			</div>
 		</Wrapper>
 	);
 }
@@ -468,6 +413,19 @@ const Wrapper = styled.div`
 				text-align: right;
 			}
 		}
+
+		.box_section {
+			/* margin-top: 1.5rem; */
+			/* border: solid red; */
+			width: 80%;
+			height: 50rem;
+
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			justify-items: center;
+			align-items: center;
+		}
 	}
 
 	@media screen and (max-width: 1100px) {
@@ -564,6 +522,19 @@ const Wrapper = styled.div`
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		.box_section {
+			margin-top: 1.5rem;
+			border: solid red;
+			width: 80%;
+			height: 50rem;
+
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+			justify-items: center;
+			align-items: center;
+		}
 		/* height: 650vh; */
 	}
 
