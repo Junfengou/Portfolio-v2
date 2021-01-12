@@ -28,7 +28,7 @@ function Fourth() {
 						<Bubble data="Node.JS" />
 					</Fade>
 					<Fade left>
-						<Bubble data="Styled comp" />
+						<Bubble data="Rest API" />
 					</Fade>
 					<Fade right>
 						<Bubble data="Express.JS" />
