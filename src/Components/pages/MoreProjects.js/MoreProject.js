@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Boxes from "../Projects/Boxes";
+import Boxes from "./Boxes";
 import Fade from "react-reveal/Fade";
 
 function MoreProject() {
@@ -19,15 +19,15 @@ function MoreProject() {
 					<Boxes
 						title="SpaceX rockets"
 						desc="Here is a list of data about SpaceX's rockets. Maybe one day Elon Musk will lead us to Mars"
-						github=""
+						github="https://github.com/Junfengou/spacex-react-graphql"
 					/>
 				</Fade>
 
 				<Fade right>
 					<Boxes
 						title="Weather app"
-						desc="A simple weather app that will help you dress appropriately in the morning before you head out the door!"
-						github=""
+						desc="A weather app that will help you dress appropriately before you head out the door!"
+						github="https://github.com/Junfengou/weather-app-react"
 					/>
 				</Fade>
 
@@ -42,7 +42,7 @@ function MoreProject() {
 				<Fade bottom>
 					<Boxes
 						title="Social media app with Django"
-						desc="My very first web project! A small social platform where users can post whatever they want. I promise I won't censor you. xD"
+						desc="My first web project! A small social platform where users can post whatever they want!"
 						github="http://marshpillow.pythonanywhere.com/"
 					/>
 				</Fade>
@@ -65,6 +65,7 @@ const Wrapper = styled.div`
 		width: 75%;
 		height: 100%;
 
+		margin-top: 3rem;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;

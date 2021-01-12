@@ -8,7 +8,7 @@ function Second() {
 		<Wrapper>
 			<div className="left_wrapper">
 				<div className="text_area">
-					<h2>Hi. My name is Jun</h2>
+					<h2>👋 Hi. My name is Jun</h2>
 					<h3>
 						Welcome to my portfolio! <span className="divider" />
 					</h3>
@@ -41,7 +41,7 @@ function Second() {
 					</p>
 
 					<a target="_blank" rel="noreferrer" href={Resume}>
-						<button>My Resume</button>
+						<button>My Resume </button>
 					</a>
 				</div>
 			</div>
@@ -87,6 +87,7 @@ const Wrapper = styled.div`
 			outline: 0;
 			font-weight: bold;
 			cursor: pointer;
+			font-family: "Kanit", sans-serif;
 		}
 
 		button:hover {
@@ -125,12 +126,12 @@ const Wrapper = styled.div`
 	}
 
 	img {
-		/* border: solid red; */
 		border: solid thick var(--paleBlue);
 		height: 18rem;
 		width: 18rem;
 		border-radius: 100%;
 		object-fit: contain;
+		margin-top: 6rem;
 	}
 
 	@media screen and (max-width: 1500px) {

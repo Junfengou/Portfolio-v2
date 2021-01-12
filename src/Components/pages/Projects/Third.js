@@ -16,7 +16,8 @@ function Third() {
 		<Wrapper>
 			<div className="title">
 				<h1>
-					Some things I worked on <span className="divider" />
+					Some things I worked on 🔧
+					<span className="divider" />
 				</h1>
 			</div>
 
@@ -61,6 +62,7 @@ function Third() {
 					</div>
 				</div>
 			</div>
+			<hr />
 
 			{/**--------------------------------------- */}
 
@@ -85,20 +87,21 @@ function Third() {
 						</div>
 
 						<div className="links">
-							<a target="_blank" rel="noreferrer" href="#">
-								<DiGithubAlt className="Gitcon" />
-							</a>
 							<a
 								target="_blank"
 								rel="noreferrer"
-								href=" https://fresh-catch-756af.web.app/"
+								href="https://github.com/Junfengou/Sick-fits-react"
 							>
+								<DiGithubAlt className="Gitcon" />
+							</a>
+							<a target="_blank" rel="noreferrer" href="#">
 								<BsFolderSymlink className="Foldercon" />
 							</a>
 						</div>
 					</div>
 				</Roll>
 			</div>
+			<hr />
 
 			{/**--------------------------------------- */}
 
@@ -142,7 +145,7 @@ function Third() {
 					</div>
 				</div>
 			</div>
-
+			<hr />
 			{/**--------------------------------------- */}
 
 			<div className="project__wrapper">
@@ -186,7 +189,7 @@ function Third() {
 					</div>
 				</Roll>
 			</div>
-
+			<hr />
 			{/**--------------------------------------- */}
 		</Wrapper>
 	);
@@ -203,6 +206,13 @@ const Wrapper = styled.div`
 	flex-direction: column;
 	font-family: "Kanit", sans-serif;
 
+	hr {
+		width: 30%;
+		background-color: #eee;
+		border: 0 none;
+		color: #eee;
+		height: 1px;
+	}
 	.title {
 		/* border: solid red; */
 		height: 7rem;
@@ -337,18 +347,6 @@ const Wrapper = styled.div`
 		}
 	}
 
-	.box_section {
-		/* margin-top: 1.5rem; */
-		width: 80%;
-		height: 40rem;
-
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		justify-items: center;
-		align-items: center;
-	}
-
 	@media screen and (max-width: 1500px) {
 		display: flex;
 		justify-content: space-between;
@@ -445,7 +443,7 @@ const Wrapper = styled.div`
 		}
 
 		.project__wrapper {
-			border: solid thin var(--sealthGrey);
+			/* border: solid thin var(--sealthGrey); */
 			border-radius: 5%;
 			height: 19%;
 			width: 80%;

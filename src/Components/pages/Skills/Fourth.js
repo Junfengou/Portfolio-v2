@@ -92,7 +92,7 @@ function Fourth() {
 				</div>
 				<div className="stack__info">
 					<Fade top>
-						<Bubble data="Github" />
+						<Bubble data="Git" />
 					</Fade>
 					<Fade left>
 						<Bubble data="Comd Line" />

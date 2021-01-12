@@ -6,7 +6,7 @@ function Boxes({ title, desc, github }) {
 	return (
 		<Wrapper>
 			<div className="head">
-				<h2>{title}</h2>
+				<h2>{title} 🔨</h2>
 			</div>
 			<div className="body">
 				<p>{desc}</p>
@@ -21,8 +21,8 @@ function Boxes({ title, desc, github }) {
 }
 
 const Wrapper = styled.div`
-	width: 70%;
-	height: 60%;
+	width: 75%;
+	height: 65%;
 	border: solid thin var(--sealthGrey);
 	/* border: solid red; */
 	display: flex;
@@ -79,7 +79,7 @@ const Wrapper = styled.div`
 		}
 	}
 
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 700px) {
 		margin-left: 5rem;
 		width: 65%;
 		height: 60%;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FaFacebook } from "react-icons/fa";
+import { RiLinkedinBoxFill } from "react-icons/ri";
 import { RiInstagramFill } from "react-icons/ri";
 import { ImGithub } from "react-icons/im";
 import Jello from "react-reveal/Jello";
@@ -10,23 +10,21 @@ function Contact() {
 		<Wrapper>
 			<div className="container">
 				<h2>Let's build something together!</h2>
-				<p>
-					I am actively looking for projects and open for any opportunities. If
-					you're interested, you can react me here!
-				</p>
 				<Jello>
 					<a href="mailto:junfengou@gmail.com">
-						<button>Contact me!</button>
+						<button>Get in touch!</button>
 					</a>
 				</Jello>
+				<p>Build using React with help from ☕ and 🍵</p>
+
 				<div className="icons">
 					<div className="icon">
 						<a
 							target="_blank"
 							rel="noreferrer"
-							href="https://www.facebook.com/junfeng.ou.3/"
+							href="https://www.linkedin.com/in/junfeng-ou-a359b41a4/"
 						>
-							<FaFacebook className="react_icon" />
+							<RiLinkedinBoxFill className="react_icon" />
 						</a>
 					</div>
 
@@ -49,8 +47,6 @@ function Contact() {
 							<ImGithub className="react_icon" />
 						</a>
 					</div>
-					{/* <RiInstagramFill className="icon" />
-					<ImGithub className="icon" /> */}
 				</div>
 			</div>
 		</Wrapper>
@@ -95,6 +91,7 @@ const Wrapper = styled.div`
 		outline: 0;
 		font-weight: bold;
 		cursor: pointer;
+		font-family: "Kanit", sans-serif;
 	}
 
 	button:hover {
