@@ -16,11 +16,11 @@ function Second() {
 					<p>
 						I am a highly motivated college student who loves to explore the
 						possibilities of the web. I started my journey as a frontend
-						developer about a year ago and I love everything this career path
-						has to offer. The little I learned in college has left me hungary
-						for more. Little by little, I felt in love this craft. It all
-						started with a weekend search and turn into a year long adventure
-						with so much more left to discovered!
+						developer in 2019 and I love everything this career path has to
+						offer. The little I learned in college has left me hungary for more.
+						Little by little, I felt in love this craft. It all started with a
+						weekend search and turn into a year long adventure with so much more
+						left to discovered!
 					</p>
 
 					<p>
@@ -135,7 +135,7 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 1500px) {
-		height: 130vh;
+		height: 150vh;
 		/* border: solid red; */
 		flex-direction: column-reverse;
 

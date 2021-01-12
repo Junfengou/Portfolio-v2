@@ -130,7 +130,8 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 1000px) {
-		height: 50vh;
+		/* border: solid red; */
+		height: 45vh;
 		.container {
 			/* border: solid red; */
 			height: 80%;
@@ -149,6 +150,7 @@ const Wrapper = styled.div`
 
 	@media screen and (max-width: 720px) {
 		height: 60vh;
+		/* border: solid red; */
 		.container {
 			/* border: solid red; */
 			height: 80%;
@@ -199,7 +201,7 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 850px) and (max-height: 1100px) {
-		height: 70vh;
+		height: 50vh;
 		.container {
 			/* border: solid red; */
 			height: 56%;

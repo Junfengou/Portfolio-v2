@@ -93,12 +93,13 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 600px) {
-		height: 180vh;
+		height: 110vh;
 		/* border: solid red; */
 	}
 
 	@media screen and (max-width: 400px) {
-		height: 200vh;
+		height: 150vh;
+		/* border: solid red; */
 	}
 `;
 export default MoreProject;
