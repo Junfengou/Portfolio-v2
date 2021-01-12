@@ -32,6 +32,7 @@ const Wrapper = styled.div`
 	border-radius: 2%;
 	margin-left: 5rem;
 	color: var(--offWhite);
+	font-family: "Kanit", sans-serif;
 	h2,
 	p {
 		margin-left: 1.5rem;
