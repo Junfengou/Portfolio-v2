@@ -71,7 +71,7 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 1200px) {
-		width: 80%;
+		width: 70%;
 		height: 60%;
 		margin-left: 4rem;
 		h2,
@@ -80,8 +80,9 @@ const Wrapper = styled.div`
 		}
 	}
 
-	@media screen and (max-width: 700px) {
-		margin-left: 5rem;
+	@media screen and (max-width: 800px) {
+		margin-top: 0.5rem;
+		margin-left: 6rem;
 		width: 65%;
 		height: 60%;
 		h2,
@@ -91,14 +92,18 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 600px) {
-		margin-left: 3.8rem;
+		margin-top: 0.5rem;
+		width: 75%;
+		height: 60%;
+		margin-left: 2.3rem;
 	}
 
 	@media screen and (max-width: 400px) {
-		margin-top: 3rem;
+		margin-top: 0.5rem;
 		margin-left: 3rem;
-		width: 70%;
+		width: 75%;
 		height: 60%;
+		margin-left: 2rem;
 	}
 `;
 

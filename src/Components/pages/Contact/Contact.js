@@ -131,7 +131,7 @@ const Wrapper = styled.div`
 
 	@media screen and (max-width: 1000px) {
 		/* border: solid red; */
-		height: 45vh;
+		height: 30vh;
 		.container {
 			/* border: solid red; */
 			height: 80%;
@@ -148,12 +148,13 @@ const Wrapper = styled.div`
 		}
 	}
 
-	@media screen and (max-width: 720px) {
-		height: 60vh;
+	@media screen and (max-width: 800px) {
+		height: 55vh;
 		/* border: solid red; */
 		.container {
 			/* border: solid red; */
-			height: 80%;
+			margin-top: 10rem;
+			height: 50%;
 			width: 60%;
 			h2 {
 				font-size: 1.3rem;
@@ -170,10 +171,12 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 550px) {
-		height: 60vh;
+		height: 30vh;
+		/* border: solid red; */
 		.container {
 			/* border: solid red; */
-			height: 80%;
+			margin-top: 1rem;
+			height: 50%;
 			width: 60%;
 			h2 {
 				font-size: 1rem;
@@ -200,10 +203,25 @@ const Wrapper = styled.div`
 		}
 	}
 
-	@media screen and (max-width: 850px) and (max-height: 1100px) {
-		height: 50vh;
+	@media screen and (max-width: 390px) {
+		height: 30vh;
 		.container {
 			/* border: solid red; */
+
+			h2 {
+				font-size: 0.8rem;
+			}
+			p {
+				font-size: 0.6rem;
+			}
+		}
+		/* border: solid red; */
+	}
+
+	/* @media screen and (max-width: 850px) {
+		height: 50vh;
+		border: solid red;
+		.container {
 			height: 56%;
 			h2 {
 				font-size: 0.9rem;
@@ -217,7 +235,6 @@ const Wrapper = styled.div`
 				width: 7rem;
 			}
 			.icons {
-				/* border: solid blue; */
 				width: 70%;
 				height: 20%;
 			}
@@ -227,10 +244,9 @@ const Wrapper = styled.div`
 				height: 1.3rem;
 				width: 1.3rem;
 				color: var(--paleBlue);
-				/* border: solid blue; */
 			}
 		}
-	}
+	} */
 `;
 
 export default Contact;

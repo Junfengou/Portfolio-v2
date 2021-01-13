@@ -63,7 +63,7 @@ const Wrapper = styled.div`
 	.box_section {
 		/* border: solid blue; */
 		width: 75%;
-		height: 100%;
+		height: 90%;
 
 		margin-top: 3rem;
 		display: grid;
@@ -73,7 +73,8 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 1200px) {
-		height: 90vh;
+		height: 130vh;
+		/* border: solid red; */
 		.box_section {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
@@ -82,7 +83,8 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 800px) {
-		height: 100vh;
+		height: 85vh;
+		/* border: solid red; */
 		.box_section {
 			width: 75%;
 			height: 100%;
@@ -93,12 +95,22 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 600px) {
-		height: 110vh;
+		height: 135vh;
 		/* border: solid red; */
 	}
 
 	@media screen and (max-width: 400px) {
 		height: 150vh;
+		/* border: solid red; */
+	}
+
+	@media screen and (max-width: 390px) {
+		height: 150vh;
+		/* border: solid red; */
+	}
+
+	@media screen and (max-width: 360px) {
+		height: 175vh;
 		/* border: solid red; */
 	}
 `;

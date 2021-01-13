@@ -178,14 +178,37 @@ const Wrapper = styled.div`
 	}
 
 	@media screen and (max-width: 1024px) {
+		/* border: solid red; */
+
+		img {
+			height: 12rem;
+			width: 12rem;
+			margin-top: 1rem;
+		}
+
 		.left_wrapper {
 			/* border: solid red; */
 			height: 25%;
 			width: 60%;
+
+			button {
+				height: 2rem;
+				width: 7rem;
+			}
+			h2,
+			h3 {
+				font-size: 1rem;
+			}
+
+			p {
+				font-size: 0.9rem;
+			}
 		}
 	}
 
 	@media screen and (max-width: 770px) {
+		/* border: solid red; */
+		height: 120vh;
 		.left_wrapper {
 			/* border: solid red; */
 			height: 60%;
@@ -195,8 +218,6 @@ const Wrapper = styled.div`
 		img {
 			height: 11rem;
 			width: 11rem;
-			border-radius: 100%;
-			object-fit: contain;
 		}
 	}
 
@@ -208,9 +229,67 @@ const Wrapper = styled.div`
 		}
 	} */
 
-	@media screen and (max-width: 450px) and (max-height: 900px) {
+	@media screen and (max-width: 550px) {
+		/* border: solid red; */
+		height: 130vh;
+		img {
+			height: 10rem;
+			width: 10rem;
+			margin-top: 3rem;
+		}
+
 		.left_wrapper {
-			/* border: solid red; */
+			button {
+				height: 2rem;
+				width: 7rem;
+			}
+			h2,
+			h3 {
+				font-size: 0.9rem;
+			}
+
+			p {
+				font-size: 0.8rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		/* border: solid red; */
+		height: 130vh;
+
+		img {
+			height: 9rem;
+			width: 9rem;
+			border-radius: 100%;
+			object-fit: contain;
+			margin-top: 3rem;
+		}
+
+		.left_wrapper {
+			button {
+				height: 2rem;
+				width: 7rem;
+			}
+			h2,
+			h3 {
+				font-size: 0.8rem;
+			}
+
+			p {
+				font-size: 0.7rem;
+			}
+			button {
+				height: 1.9rem;
+				width: 6rem;
+				font-size: 0.7rem;
+			}
+		}
+	}
+
+	/* @media screen and (max-width: 450px) and (max-height: 900px) {
+		border: solid red;
+		.left_wrapper {
 			height: 60%;
 			width: 85%;
 		}
@@ -226,31 +305,22 @@ const Wrapper = styled.div`
 		}
 
 		img {
-			/* border: solid red; */
 			height: 9.5rem;
 			width: 9.5rem;
 			border-radius: 100%;
 			object-fit: contain;
 		}
-	}
+	} */
 
-	@media screen and (max-width: 1200px) and (max-height: 800px) {
+	/* @media screen and (max-width: 1200px) and (max-height: 800px) {
+		border: solid red;
 		height: 210vh;
-		.left_wrapper {
-			/* border: solid red; */
-			/* height: 60%;
-			width: 85%; */
-		}
-	}
+	
+	} */
 
-	@media screen and (max-width: 850px) and (max-height: 450px) {
+	/* @media screen and (max-width: 850px) and (max-height: 450px) {
 		height: 230vh;
-		.left_wrapper {
-			/* border: solid red; */
-			/* height: 60%;
-			width: 85%; */
-		}
-	}
+	} */
 `;
 
 export default Second;

@@ -88,20 +88,20 @@ const Wrapper = styled.div`
 		cursor: pointer;
 	}
 
-	@media screen and (max-width: 750px) and (max-height: 400px) {
+	@media screen and (max-width: 870px) {
 		h1 {
-			font-size: 2.5rem;
+			font-size: 2.9rem;
 			z-index: 2;
 		}
 
 		h3 {
-			font-size: 1rem;
+			font-size: 1.6rem;
 			/* border: solid red; */
 			margin-top: -1.7rem;
 		}
 	}
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 630px) {
 		h1 {
 			font-size: 2rem;
 			z-index: 2;
@@ -115,7 +115,7 @@ const Wrapper = styled.div`
 		}
 	}
 
-	@media screen and (max-width: 380px) {
+	@media screen and (max-width: 430px) {
 		h1 {
 			font-size: 1.5rem;
 			z-index: 2;
@@ -132,6 +132,16 @@ const Wrapper = styled.div`
 	@media screen and (max-width: 380px) {
 		h3 {
 			font-size: 0.8rem;
+		}
+	}
+
+	@media screen and (max-width: 350px) {
+		h1 {
+			font-size: 1.3rem;
+			z-index: 2;
+		}
+		h3 {
+			font-size: 0.9rem;
 		}
 	}
 `;
