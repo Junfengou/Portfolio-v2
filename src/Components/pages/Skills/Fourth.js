@@ -37,7 +37,7 @@ function Fourth() {
 						<Bubble data="MongoDB" />
 					</Fade>
 					<Fade top>
-						<Bubble data="and more..." />
+						<Bubble data="Agile Dev" />
 					</Fade>
 					{/* <Bubble data="HTML5" />
 					<Bubble data="CSS3" />

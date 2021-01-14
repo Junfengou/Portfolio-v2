@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Me from "../../../images/Me.jpg";
+import Me from "../../../images/myProfilePic.png";
 import Resume from "../../../document/Resume.pdf";
 import Fade from "react-reveal/Fade";
 function Second() {
@@ -14,10 +14,10 @@ function Second() {
 					</h3>
 
 					<p>
-						I am a highly motivated college student who loves to explore the
-						possibilities of the web. I started my journey as a frontend
+						I am a highly self-motivated college student who loves to explore
+						the possibilities of the web. I started my journey as a frontend
 						developer in 2019 and I love everything this career path has to
-						offer. The little I learned in college has left me hungary for more.
+						offer. The little I learned in college has left me hungry for more.
 						Little by little, I felt in love this craft. It all started with a
 						weekend search and turn into a year long adventure with so much more
 						left to discovered!
@@ -41,7 +41,7 @@ function Second() {
 					</p>
 
 					<a target="_blank" rel="noreferrer" href={Resume}>
-						<button>My Resume </button>
+						<button>My Resume</button>
 					</a>
 				</div>
 			</div>
